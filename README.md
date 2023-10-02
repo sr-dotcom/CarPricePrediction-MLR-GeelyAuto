@@ -28,7 +28,3 @@ You are required to model the price of cars with the available independent varia
 
 When you're done with the model building and residual analysis and have made predictions on the test set, just make sure you use **y_test and y_pred.**
 where **y_test** is the test data set for the target variable and **y_pred** is the variable containing the predicted values of the target variable on the test set. Also, remember if the VIF for the selected features is not coming high always check the p-values of the variables before applying the model on test data.
-
-**Downloads:**
-
-You can download the dataset file from the link given below:

@@ -1,9 +1,3 @@
-# CarPricePrediction-MLR-GeelyAuto
-
-**Repository Description:**
-
-This GitHub repository is dedicated to the development of a multiple linear regression model for predicting car prices, with a focus on assisting Geely Auto in its market entry strategy for the American automobile market.
-
 **Problem Statement:**
 
 A Chinese automobile company **Geely Auto** aspires to enter the US market by setting up its manufacturing unit there and producing cars locally to give competition to their US and European counterparts. 
@@ -18,4 +12,23 @@ Based on various market surveys, the consulting firm has gathered a large datase
 
 **Business Goal** 
 
-You are required to model the price of cars with the available independent variables. It will be used by the management to understand how exactly the prices vary with the independent variables. They can accordingly manipulate the design of the cars, the business strategy, etc. to meet certain price levels. Further, the model will be a good way for management to understand the pricing dynamics of a new market. 
+You are required to model the price of cars with the available independent variables. It will be used by the management to understand how exactly the prices vary with the independent variables. They can accordingly manipulate the design of the cars, the business strategy, etc. to meet certain price levels. Further, the model will be a good way for management to understand the pricing dynamics of a new market.
+
+**Data Preparation**
+
+* There is a variable named **CarName** which is comprised of two parts - the first word is the name of 'car company' and the   second is the 'car model'. For example, **chevrolet impala** has 'chevrolet' as the car company name and 'impala' as the car model name. You need to consider only company name as the independent variable for model building. 
+ 
+
+**Model Evaluation:**
+When you're done with the model building and residual analysis and have made predictions on the test set, just make sure you use **y_test and y_pred.**
+
+where **y_test** is the test data set for the target variable, and **y_pred** is the variable containing the predicted values of the target variable on the test set. Also, remember if the VIF for the selected features is not coming high always check the p-values of the variables before applying the model on test data.
+
+ 
+
+**Data:**
+
+* File Name **"Data Dictionary - CarPrices"** contains a lists various attributes related to cars. The data dictionary provides a detailed breakdown of each attribute, specifying its description and the type of data (e.g., Numeric or Categorical).
+
+* File Name **"CarPrice_Assignment"** contains a tabulated dataset pertaining to various attributes of cars. The dataset is organized with columns representing different car attributes, and each row detailing specific information about a particular car model.
+
